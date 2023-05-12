@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cake Park</title>
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <header>
+      <div class="container1">
+        <h4 class="logo">Cake Park</h4>
+        <div class="wraper">
+          <div class="search-warper">
+            <form action="" class="searchform">
+              <input type="text" placeholder="search product" name="">
+              <button type="submit" ><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#login-signup"><i class="fa-solid fa-right-to-bracket"></i></a>
+          <div class="bar-exit">
+            <a href="#" id="bar" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" id="exit" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+        </div>
+        </div>
+      </div>
+      <div class="container2">
+          <a href ="#">Home</a>
+          <a href ="#">Cakes</a>
+          <a href ="#">Pizzas</a>
+          <a href ="#">Others</a>
+          <a href ="#about-us">About us</a>
+          <a href ="#">Contacts</a>
+      </div>
+      <div class="sidenav" id="mySidenav">
+        <a href ="#">Home</a>
+        <a href ="#">Cakes</a>
+        <a href ="#">Pizzas</a>
+        <a href ="#">Others</a>
+        <a href ="#">About us</a>
+        <a href ="#">Contacts</a>
+
+      </div>
+  </header>
+  <main>
+    <div class="biglogo">
+      <h1  id="mlogo">Cake Park</h1>
+      <img src="asset/images/background.png" id= "bg" alt="">
+    </div>
+    
+    <marquee class="marquee" bgcolor ="antiquewhite">Special Offers | Special Offers | Special Offers | Special Offers |Special Offers |Special Offers |Special Offers |Special Offers |Special Offers |</marquee>
+    <div class="fill"></div>
+    <div class="horizontal-scroll">
+      <a href="#">
+        <img class="image" src="asset/images/cakes/birthday-cake.jpg">
+        <div class="overlay"><h1>50% Off<br> on<br>birthday-cake</h1></div>
+      </a>
+      <a href="#">
+        <img class="image" src="asset/images/cakes/wedding-cake.jpg">
+        <div class="overlay"><h1>60% Off<br> on<br>Wedding Cakes</h1></div>
+      </a>
+      <a href="#">
+        <img class="image" src="asset/images/cakes/dount.jpg">
+        <div class="overlay"><h1>free DONUTS<br>Limited time offer!</h1></div>
+      </a>
+      <a href="#">
+        <img class="image" src="asset/images/cakes/cupcakes.jpg">
+        <div class="overlay"><h1>70% off <br> on <br> Cuk-Cakes</h1></div>
+      </a>
+      <a href="#">
+        <img class="image" src="asset/images/cakes/cake-pops.jpg">
+        <div class="overlay"><h1>50% Off<br> on<br>Cake-Pops</h1></div>
+      </a>
+      <a href="#">
+        <img class="image" src="asset/images/pizzas/pizza2.jpg">
+        <div class="overlay"><h1>Pizzas<br> NEW LAUNCH!</h1></div>
+      </a>
+    </div>
+    <marquee class="marquee-btm" bgcolor ="antiquewhite" direction="right">Special Offers | Special Offers | Special Offers | Special Offers |Special Offers |Special Offers |Special Offers |Special Offers |Special Offers |</marquee>
+    
+    <div class="login-signup" id="login-signup">
+      <form class="login lch" action="#">
+        <h3>Login</h3>
+        <br>
+        <label for="uname">Username</label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <br>
+        <label for="psw">Password</label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+        <button type="submit">Login</button>
+        <br>
+        <p>Not a Member <a id = 'register'  onclick="Mylogin()" style="color:dodgerblue">Register here</a>.</p>
+      </form>
+      <form class="signup" action="#">
+        <h3>Sign Up</h3>
+        <br>
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <br>
+        <label for="psw">Password</label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+        <label for="psw-repeat">Repeat Password</label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <br>
+        <button type="submit" class="signupbtn">Sign Up</button>
+        <br>
+        <p>Already a Member <a id ='Click'  onclick="Mysignup()" style="color:dodgerblue">Click here</a>.</p>
+      </form>
+    </div> 
+
+    <div class="about-us">
+      <hr id="about-us"><br>
+      <h2 >About Us</h2><br>
+      <p>Welcome to Cake Park!</p>
+      <p>At Cake park, we are passionate about creating exquisite cakes that not only taste delicious but 
+        also look stunning. We believe that cakes are not just desserts, but they are also an expression of joy,
+        celebration, and love. With our meticulous attention to detail, creative designs, and use of high-quality 
+        ingredients,we strive to make every cake a work of art that brings happiness to our customers.</p><br>
+      <p>Our journey began 3 years, and since then, we have been 
+        dedicated to delivering exceptional cakes and outstanding customer service. Our team of skilled bakers 
+        and decorators pour their heart and soul into every cake they create, ensuring that each one is a 
+        masterpiece that exceeds your expectations.</p><br>
+      <p>At Cake Shop, we offer a wide range of cake options to suit any occasion. From elegant 
+          wedding cakes to whimsical birthday cakes, from delicious cupcakes to delectable pastries, we have 
+          something for everyone. We take pride in using only the finest ingredients, including fresh fruits, 
+          premium chocolates, and organic dairy, to craft cakes that not only taste amazing but are also visually 
+          stunning.</p><br>
+      <p>We are also proud to be an active part of our local community and support various charitable causes, 
+          as we believe in giving back to those in need. We are grateful for the love and support of our loyal 
+          customers, and we look forward to continuing to serve our community with delicious cakes and exceptional 
+          service.</p><br>
+      <p>Thank you for choosing Cake Park as your cake destination. We are honored to be a part of 
+          your special moments and look forward to creating sweet memories together.</p><br>
+        <hr>
+
+
+    </div>
+  </main>
+  <footer>
+    <div class="follow">
+      <h2>follow us on:</h2>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-tiktok"></i>
+    </div>
+    <div class="contact">
+      <h2>Contact us on:</h2>
+      <i class="fa-regular fa-envelope"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-solid fa-phone"></i>
+      
+    </div>
+  </footer>
+  <script src="index.js"></script> 
+  </body>
+</html>

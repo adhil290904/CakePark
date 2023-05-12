@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@300&display=swap');
+
+/*POSITIONING HEADER*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    display: flex;
+    float: left;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    z-index: 3;
+    background-color: #fff;
+}
+.container1 .wraper{
+    display: flex;
+    gap: 2rem;
+    right:0;
+}
+.wraper i{
+    font-size: 1.3rem;
+}
+
+/*search button*/
+.search-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchform{
+    width: 100%;
+    border-radius: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+}
+.searchform input{
+    background-color: transparent;
+    font-size: large;
+    width: 10rem;
+    border: none;
+    outline: none;
+}
+::placeholder{
+    color: gray;
+}
+.searchform button{
+    border: none;
+    background-color: transparent;
+}
+
+/*search button end*/
+.container2{
+    top: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 35px;
+    margin:0px 40px;
+    width: 94.7%;
+    z-index: 10;
+    transition: .5s;
+    border: solid black ;
+}
+.container2 a{
+    transition: .3s ;
+}
+.container2 a:hover{
+    font-size: larger;
+    transform: translate(transition);
+}
+.container2 p{
+    transition: .3s ;
+}
+.container2 p:hover{
+    font-size: larger;
+    transform: translate(transition);
+
+}
+.bar-exit{
+    display: none;
+}
+#exit{
+    display: none;
+}
+.sidenav {
+    display: none;
+    flex-direction: column;
+    height: 0rem;
+    width: 20rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:antiquewhite;
+    border: solid bisque;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+    align-items: center;
+    overflow: hidden;
+    display: none;
+    transition: .7s;
+  }
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  .sidenav a:active{
+    scale: .8;
+}
+a{
+text-decoration: none;
+color: black;
+}
+/*POSITIONING BODY*/
+
+/*logo and bg*/
+.biglogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    object-fit: cover;
+    z-index: -5;
+    overflow: hidden;
+}
+.biglogo h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 10rem;
+    color: rgba(5, 5, 5, .75);
+    border: solid black;
+    padding: 3rem;
+    text-align: center;
+
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3),
+                5px 5px 5px 5px rgba(0, 0, 0, .3);
+
+}
+#bgcontainer{
+    position: absolute;
+}
+#bg{
+    position:absolute;
+    left: 5rem;
+    width: 100%;
+    overflow: hidden;
+    z-index: -3;
+    filter: opacity(35%);
+}
+/* logo and bg end*/
+.marquee{
+    top: 27rem;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: solid black;
+}
+.scrolling-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+    background-color: antiquewhite;
+}
+/* special offer running*/
+.marquee-btm{
+    margin: 0px 40px;
+    border: solid black;
+    
+}
+.fill{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 50px;
+}
+/* special offer running end*/
+.horizontal-scroll{
+    margin:0 40px 40px 10px;
+    height: 420px;
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    background: #fff;
+    z-index: 1000;
+}
+.horizontal-scroll::-webkit-scrollbar{
+    width: 0;
+}
+/*Over lay and info on hover*/ 
+
+.horizontal-scroll a{
+    display: inline-block;
+    position: relative;
+}
+.image{
+    height: 380px;
+    width: 380px;
+    object-fit: cover;
+    transition: .4s;
+    margin: 0px 20px;
+    border: solid black;
+    border-radius: 40px;
+}
+  
+a:hover .image{
+    transform: translate(transition);
+    height: 420px;
+    width:  440px;
+    filter:brightness(30%)
+}
+
+.horizontal-scroll a .overlay {
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .7s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.horizontal-scroll a .overlay h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.horizontal-scroll a:hover .overlay {
+    opacity: 1;
+  }
+/*over lay and info on hover end*/
+
+/*login/ signup start*/
+
+.login-signup{
+    display: flex;
+    margin: 3rem;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid black;
+    padding: 4rem 14rem;
+    border-radius: 3rem;
+    background-color: antiquewhite;
+}
+
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid black;
+    padding: 4rem 14rem;
+    border-radius: 3rem;
+    background-color: antiquewhite;
+    
+}
+
+.lch{
+    display: none;
+}
+
+/*login/signup end*/
+
+/*About us part8*/
+
+.about-us {
+    margin: 10px 40px;
+    border: solid black;
+    padding: 3rem;
+    border-radius: 3rem;
+}
+
+.about-us h2{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 45%;
+}
+
+/*FOOTER CONTENT*/
+
+footer{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin: 40px;
+    background-color: antiquewhite;
+    border: solid black;
+}
+
+.follow{
+    margin:5px 100px;
+}
+
+
+footer h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+i{
+    font-size: 1.75rem;
+    margin: 5px;
+}
+
+.contact{
+    margin:5px 100px;
+   margin-left: auto;
+}
+@media (max-width: 780px) {
+
+    header{
+        display: flex;
+        align-items: center;
+    }
+
+    .container1{
+        box-shadow: 10px 10px 12px antiquewhite;
+        background-color: white;
+        position: fixed;
+        z-index: 11;
+        margin-top: 3rem;
+        right: 0;
+        left: 0;
+        height: 40px;
+
+    }
+    .wraper{
+        gap: 1rem;
+    }
+    .wraper i{
+        font-size: 1rem;
+    }
+    .container2{
+        display: none;
+    }
+    .bar-exit{
+        display: block;
+    }
+    .container1 a{
+        text-decoration: none;
+        color: black;
+    }
+    .sidenav{
+        display: flex;
+        right: 2rem;
+    }
+
+    .biglogo{
+        display: relative;
+        margin: 0;
+        height: 200px;
+        margin-top: 2.75rem;
+    }
+    #mlogo{
+        font-size: 5rem;
+        padding: 2rem;
+    }
+
+    .marquee{
+        margin: 0;
+    }
+    .marquee-btm{
+        margin: 0;
+    }
+    .horizontal-scroll{
+        height: 220px;
+        margin:0;
+    }
+    #bg{
+        display: none;
+    }
+    .about-us{
+        margin: 0;
+    }
+
+    .login-signup{
+        display: none;
+        margin: 0;
+    }
+    .login{
+        margin: 0;
+    }
+    .signup{
+        margin: 0;
+    }
+    .image{
+        height: 190px;
+        width: 190px;
+        margin: 0px 10px;
+    }
+    a:hover .image{
+        height: 210px;
+        width: 210px;
+    }
+    .overlay{
+        font-size: 10px;
+    }
+    .fill{
+        display: none ;
+    }
+    .searchform{
+        display: none;
+    }
+
+}
